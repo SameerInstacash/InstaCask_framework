@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TestResultTitleCell" rowHeight="81" id="KGk-i7-Jjw" customClass="TestResultTitleCell" customModule="TechCheck_Exchange" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="59"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Failed and Skipped Tests" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-7O-kR3">
+                        <rect key="frame" x="15" y="20" width="294" height="19"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="22"/>
+                        <color key="textColor" red="0.4392156862745098" green="0.4392156862745098" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="28"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03f-Ko-PMH">
+                        <rect key="frame" x="0.0" y="58" width="324" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Fzj-6R-gmR"/>
+                            <constraint firstAttribute="height" constant="1" id="WoX-WD-Wy6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="5IN-7O-kR3" secondAttribute="bottom" constant="20" id="5FZ-CD-AAE"/>
+                    <constraint firstItem="5IN-7O-kR3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9fB-1E-bjo"/>
+                    <constraint firstAttribute="trailing" secondItem="03f-Ko-PMH" secondAttribute="trailing" id="Bmh-zz-cIi"/>
+                    <constraint firstAttribute="bottom" secondItem="03f-Ko-PMH" secondAttribute="bottom" id="PNn-H6-q2w"/>
+                    <constraint firstItem="03f-Ko-PMH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PVD-6g-6Ig"/>
+                    <constraint firstAttribute="trailing" secondItem="5IN-7O-kR3" secondAttribute="trailing" constant="15" id="WWc-gN-p8q"/>
+                    <constraint firstItem="5IN-7O-kR3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="WZP-gp-iUJ"/>
+                    <constraint firstItem="5IN-7O-kR3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fZV-22-woB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="lblSeperator" destination="03f-Ko-PMH" id="pHj-yY-gi8"/>
+                <outlet property="lblTitle" destination="5IN-7O-kR3" id="b5G-ft-C39"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="63.950892857142854"/>
+        </tableViewCell>
+    </objects>
+</document>
